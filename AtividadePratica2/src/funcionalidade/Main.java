@@ -3,9 +3,6 @@ package funcionalidade;
 import excecoes.RedeSocialCheckedException;
 import excecoes.RedeSocialUncheckedException;
 
-import java.sql.SQLOutput;
-import java.util.SortedMap;
-
 public class Main {
     public static void main(String[] args) {
 

@@ -35,6 +35,6 @@ public class GooglePlus extends RedeSocial implements VideoConferencia, Comparti
 
     @Override
     public void fazStreaming() {
-        System.out.println("Iniciando uma stream no googlePlus");
+        System.out.println("Iniciou uma stream no googlePlus");
     }
 }
