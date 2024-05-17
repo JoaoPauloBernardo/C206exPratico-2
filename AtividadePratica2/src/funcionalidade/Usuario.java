@@ -29,12 +29,14 @@ public class Usuario{
                 redeSocial.curtirPublicacao();
                 redeSocial.postarComentario();
                 redeSocial.postarVideo();
+                System.out.println("\n");
             }
             else {//insere as proximas redes sociais
                 redeSocial.postarFoto();
                 redeSocial.curtirPublicacao();
                 redeSocial.postarComentario();
                 redeSocial.postarVideo();
+                System.out.println("\n");
             }
         }
     }
