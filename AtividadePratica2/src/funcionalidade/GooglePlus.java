@@ -8,6 +8,10 @@ public class GooglePlus extends RedeSocial implements VideoConferencia, Comparti
         super(senha, numAmigos);
     }
 
+    public GooglePlus() {
+        super();
+    }
+
     @Override
     public void postarFoto() {
         System.out.println("Postou uma foto no googlePlus");
@@ -31,6 +35,6 @@ public class GooglePlus extends RedeSocial implements VideoConferencia, Comparti
 
     @Override
     public void fazStreaming() {
-        System.out.println("Iniciando a stream no googlePlus");
+        System.out.println("Iniciando uma stream no googlePlus");
     }
 }

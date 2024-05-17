@@ -3,26 +3,26 @@ package funcionalidade;
 import excecoes.RedeSocialCheckedException;
 import excecoes.RedeSocialUncheckedException;
 
+import java.sql.SQLOutput;
+import java.util.SortedMap;
+
 public class Main {
     public static void main(String[] args) {
 
         try {
             RedeSocial[] redes = {
                     new Facebook("senhaFB", 150),
-                    new Twitter("senhaTW", 200),
-                    new Instagram("senhaJPG", 1050),
-                    new GooglePlus("senhaGL", 13)
+                    new GooglePlus("senhaGP", 13)
             };
             // Criação de um usuário com nome, email e as redes sociais criadas
-            System.out.println("Ações do usuário 1, que usa facebook: \n");
-            Facebook usuario1 = new Facebook("joao", 207);
-            usuario1.fazStreaming();
-            usuario1.compartilhar();
-            System.out.println("\nAções do usuário 2, que usa facebook, Twitter, Instragram e GooglePlus: \n");
-
-            Usuario usuario2 = new Usuario(redes);
+            Usuario usuario = new Usuario("João", "joaopaulo.jp@ges.inatel.br", redes);
+            System.out.println("\nNome do usuário: " + usuario.getNome());
+            System.out.println("Email do usuário: " + usuario.getEmail());
+            System.out.println("\nAções do usuário, que usa facebook e googlePlus: \n" );
             // Chamada do método para usar as redes sociais do usuário
-            usuario2.usarRedesSociais();
+            usuario.usarRedesSociais();
+            usuario.streamaGooglePlus();
+            usuario.compartilhaGooglePlus();
 
 
         } catch (RedeSocialUncheckedException e) {

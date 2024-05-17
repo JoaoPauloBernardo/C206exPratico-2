@@ -18,6 +18,9 @@ public abstract class RedeSocial {
         this.numAmigos = numAmigos;
     }
 
+    public RedeSocial() {
+    }
+
     public abstract void postarFoto();
 
     public abstract void postarVideo();
